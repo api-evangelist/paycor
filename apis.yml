@@ -1,0 +1,87 @@
+aid: paycor
+name: Paycor
+description: >-
+  Paycor is a cloud-based human capital management (HCM) platform that
+  provides payroll, HR, benefits administration, talent management, time and
+  attendance, and workforce analytics for small and mid-sized businesses.
+  The platform serves HR and finance teams with a unified system of record
+  for employees, pay, time, and benefits data. Paycor exposes a Public REST
+  API authenticated via OAuth 2.0 with authorization at secure.paycor.com and
+  resource endpoints at apis.paycor.com (production) and apis-sandbox.paycor.com
+  (sandbox).
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Human Capital Management
+  - HCM
+  - Payroll
+  - Human Resources
+  - Benefits Administration
+  - Time and Attendance
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/paycor/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: paycor:public-api
+    name: Paycor Public API v1
+    description: >-
+      REST API for accessing Paycor employees, payroll, benefits, time, and
+      organizational data. Uses OAuth 2.0 authorization code flow with
+      authorization at secure.paycor.com/connect/authorize and tokens issued
+      by apis.paycor.com/sts/v1/common/token.
+    humanURL: https://developers.paycor.com/explore
+    baseURL: https://apis.paycor.com
+    tags:
+      - HCM
+      - Payroll
+      - Employees
+      - Benefits
+    properties:
+      - type: Documentation
+        url: https://developers.paycor.com/
+      - type: Try It
+        url: https://developers.paycor.com/try
+      - type: Guides
+        url: https://developers.paycor.com/guides
+      - type: Authentication
+        url: https://developers.paycor.com/guides
+
+common:
+  - type: Website
+    url: https://www.paycor.com
+  - type: Documentation
+    url: https://developers.paycor.com
+  - type: Pricing
+    url: https://www.paycor.com/pricing/
+  - type: Sign Up
+    url: https://developers.paycor.com/register
+features:
+  - name: Payroll Processing
+    description: >-
+      End-to-end payroll processing with tax filing, direct deposit, and
+      multi-state and multi-EIN support for US employers.
+  - name: HR Management
+    description: >-
+      Employee records, onboarding, document management, and HR workflow
+      automation for small and mid-sized businesses.
+  - name: Benefits Administration
+    description: >-
+      Open enrollment, carrier connections, and ongoing benefits
+      administration integrated with payroll deductions.
+  - name: Time and Attendance
+    description: >-
+      Time tracking, scheduling, and attendance management feeding directly
+      into payroll calculations.
+  - name: Talent Management
+    description: >-
+      Recruiting, applicant tracking, performance reviews, learning, and
+      compensation planning in a unified HCM suite.
+  - name: Workforce Analytics
+    description: >-
+      Dashboards and reporting on headcount, turnover, compensation, and
+      labor cost trends for HR and finance leaders.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
