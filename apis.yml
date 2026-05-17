@@ -55,7 +55,7 @@ common:
     url: https://developers.paycor.com
   - type: Pricing
     url: https://www.paycor.com/pricing/
-  - type: Sign Up
+  - type: SignUp
     url: https://developers.paycor.com/register
 features:
   - name: Payroll Processing
