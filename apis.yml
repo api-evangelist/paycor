@@ -49,6 +49,10 @@ apis:
         url: https://developers.paycor.com/guides
 
 common:
+  - type: GitHubOrganization
+    url: https://github.com/paycor
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/paycor
   - type: Website
     url: https://www.paycor.com
   - type: Documentation
