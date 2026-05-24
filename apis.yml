@@ -61,6 +61,8 @@ common:
     url: https://www.paycor.com/pricing/
   - type: SignUp
     url: https://developers.paycor.com/register
+  - type: LLMsTxt
+    url: https://developers.paycor.com/llms.txt
 features:
   - name: Payroll Processing
     description: >-
