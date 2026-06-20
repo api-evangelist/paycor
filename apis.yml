@@ -10,7 +10,7 @@ description: >-
   resource endpoints at apis.paycor.com (production) and apis-sandbox.paycor.com
   (sandbox).
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Human Capital Management
   - HCM
