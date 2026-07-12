@@ -49,6 +49,8 @@ apis:
         url: https://developers.paycor.com/guides
 
 common:
+  - type: DomainSecurity
+    url: security/paycor-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/paycor
   - type: LinkedIn
