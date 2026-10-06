@@ -49,7 +49,7 @@ tags_raw:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/paycor/refs/heads/main/apis.yml
 created: '2026-05-11'
-modified: '2026-05-11'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
   - aid: paycor:public-api
@@ -77,6 +77,8 @@ apis:
         url: https://developers.paycor.com/guides
 
 common:
+  - url: https://www.paycor.com/feed/
+    type: BlogRSS
   - type: DomainSecurity
     url: security/paycor-domain-security.yml
   - type: GitHubOrganization
