@@ -2,7 +2,11 @@ generated: '2026-10-14'
 method: searched
 checked:
 - blackbaud/integrations/blackbaud-integration-edges.yml
+- https://kantarainitiative.org/trust-status-list/
 - https://mpl-pusa01.app.blackbaud.net/mktpl/v1/public/marketplace/applications
+- https://msb.fincen.gov/
+- https://www.access-dvs-register.service.gov.uk/register/download-register
+- https://zapier.com/api/v4/apps/
 source:
 - https://mpl-pusa01.app.blackbaud.net/mktpl/v1/public/marketplace/applications
 marketplace_apps: []
@@ -25,3 +29,59 @@ edges:
   detected_by: mirror-platform-listings.py
   badges:
   - Reviewed by Blackbaud
+- partner_name: Zapier
+  partner: zapier
+  partner_match: aggregator
+  type: marketplace
+  marketplace: zapier-directory
+  channel: ipaas-listing
+  relationship: ipaas-bridge
+  direction: third-party
+  evidence: https://zapier.com/apps/paycor/integrations
+  category: null
+  contract_reference:
+    register: Zapier app directory (zapier.com/api/v4/apps)
+    spec_file: null
+    role: ipaas-connector:zapier
+    registered_name: Paycor
+    matched_domain: paycor.com
+    matched_by: domain
+    detected_by: sweep-workflow-automation.py
+    detected: '2026-10-15'
+    signal_note: one edge per (provider, platform); actions, triggers and usage counts are context, never read
+    app_slug: paycor
+    beta: false
+    builder: unknown (not in the directory record)
+  detected_by: sweep-workflow-automation.py
+  first_seen: '2026-10-15'
+- partner_name: FinCEN (MSB registration)
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://msb.fincen.gov/
+  category: Money services business
+  contract_reference:
+    register: FinCEN MSB Registrant Search (msb.fincen.gov, full list export)
+    spec_file: null
+    standard: FinCEN MSB registration (US Bank Secrecy Act)
+    role: fincen-msb-registrant
+    registered_name: Paycor, Inc.
+    dba_name: null
+    register_id: Paycor, Inc.
+    matched_domain: paycor.com
+    matched_by: domain
+    identity: wikidata Q107175522 'Paycor' P856 https://www.paycor.com/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+    msb_activities:
+    - 409 money transmitter
+    states_of_activity: 12
+    received_date: 08/06/2024
+    signal_note: 'participation only: an MSB registration is not a licence or a certification; activities and states
+      are context, never counted'
+    detected_by: sweep-regtech-aml.py
+    detected: '2026-10-15'
+  detected_by: sweep-regtech-aml.py
+  first_seen: '2026-10-15'
