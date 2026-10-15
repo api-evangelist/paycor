@@ -38,7 +38,7 @@
     app_slug: paycor
     beta: false
     builder: unknown (not in the directory record)
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
 - slug: paycor-fincen-msb-registration
   label: FinCEN (MSB registration)
